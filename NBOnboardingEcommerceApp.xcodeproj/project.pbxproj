@@ -14,6 +14,10 @@
 		4EA739BF2B4E78BF00D6FD59 /* NBOnboardingEcommerceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA739BE2B4E78BF00D6FD59 /* NBOnboardingEcommerceAppTests.swift */; };
 		4EA739C92B4E78BF00D6FD59 /* NBOnboardingEcommerceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA739C82B4E78BF00D6FD59 /* NBOnboardingEcommerceAppUITests.swift */; };
 		4EA739CB2B4E78BF00D6FD59 /* NBOnboardingEcommerceAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA739CA2B4E78BF00D6FD59 /* NBOnboardingEcommerceAppUITestsLaunchTests.swift */; };
+		4EACE45D2B4ED4B60043FB8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EACE45C2B4ED4B60043FB8D /* Constants.swift */; };
+		4EACE45F2B4ED63C0043FB8D /* WalkthroughScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EACE45E2B4ED63C0043FB8D /* WalkthroughScreenView.swift */; };
+		4EACE4622B4ED6900043FB8D /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EACE4612B4ED6900043FB8D /* PageView.swift */; };
+		4EACE4652B4ED6C10043FB8D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EACE4642B4ED6C10043FB8D /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		4EA739C42B4E78BF00D6FD59 /* NBOnboardingEcommerceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBOnboardingEcommerceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA739C82B4E78BF00D6FD59 /* NBOnboardingEcommerceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBOnboardingEcommerceAppUITests.swift; sourceTree = "<group>"; };
 		4EA739CA2B4E78BF00D6FD59 /* NBOnboardingEcommerceAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBOnboardingEcommerceAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4EACE45C2B4ED4B60043FB8D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4EACE45E2B4ED63C0043FB8D /* WalkthroughScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughScreenView.swift; sourceTree = "<group>"; };
+		4EACE4612B4ED6900043FB8D /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		4EACE4642B4ED6C10043FB8D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,10 @@
 		4EA739AC2B4E78BA00D6FD59 /* NBOnboardingEcommerceApp */ = {
 			isa = PBXGroup;
 			children = (
+				4EACE4632B4ED6B30043FB8D /* HomeView */,
+				4EACE4602B4ED6740043FB8D /* OnboardingView */,
+				4EACE45C2B4ED4B60043FB8D /* Constants.swift */,
 				4EA739AD2B4E78BA00D6FD59 /* NBOnboardingEcommerceAppApp.swift */,
-				4EA739AF2B4E78BA00D6FD59 /* ContentView.swift */,
 				4EA739B12B4E78BE00D6FD59 /* Assets.xcassets */,
 				4EA739B32B4E78BE00D6FD59 /* Preview Content */,
 			);
@@ -125,6 +135,24 @@
 				4EA739CA2B4E78BF00D6FD59 /* NBOnboardingEcommerceAppUITestsLaunchTests.swift */,
 			);
 			path = NBOnboardingEcommerceAppUITests;
+			sourceTree = "<group>";
+		};
+		4EACE4602B4ED6740043FB8D /* OnboardingView */ = {
+			isa = PBXGroup;
+			children = (
+				4EA739AF2B4E78BA00D6FD59 /* ContentView.swift */,
+				4EACE45E2B4ED63C0043FB8D /* WalkthroughScreenView.swift */,
+				4EACE4612B4ED6900043FB8D /* PageView.swift */,
+			);
+			path = OnboardingView;
+			sourceTree = "<group>";
+		};
+		4EACE4632B4ED6B30043FB8D /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				4EACE4642B4ED6C10043FB8D /* HomeView.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EA739B02B4E78BA00D6FD59 /* ContentView.swift in Sources */,
+				4EACE4622B4ED6900043FB8D /* PageView.swift in Sources */,
 				4EA739AE2B4E78BA00D6FD59 /* NBOnboardingEcommerceAppApp.swift in Sources */,
+				4EACE4652B4ED6C10043FB8D /* HomeView.swift in Sources */,
+				4EACE45F2B4ED63C0043FB8D /* WalkthroughScreenView.swift in Sources */,
+				4EACE45D2B4ED4B60043FB8D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

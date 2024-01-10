@@ -7,15 +7,16 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    @AppStorage(AppStorageKey.currentPage) var currentPage = 1
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        if currentPage > totalPages {
+            HomeView()
+        } else {
+            WalkthroughScreenView()
         }
-        .padding()
     }
 }
 
@@ -24,3 +25,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
